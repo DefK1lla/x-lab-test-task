@@ -4,16 +4,17 @@
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1;
 
   width: 100%;
-
-  padding: 16px 0;
 
   background: $color-main;
 }
 
 .container {
   @include container;
+
+  height: $header-height;
 
   display: flex;
   align-items: center;

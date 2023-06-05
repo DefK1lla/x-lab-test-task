@@ -1,5 +1,17 @@
 @use 'styles' as *;
 
 .wrapper {
-  padding-top: 80px;
+  padding-top: $header-height;
+}
+
+.sidebar {
+  max-width: 300px;
+
+  margin-left: -32px;
+
+  box-shadow: 5px 0 5px -5px rgba(2, 0, 96, 0.25);
+}
+
+.content {
+  @include container;
 }
