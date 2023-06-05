@@ -20,3 +20,50 @@
   align-items: center;
   justify-content: space-between;
 }
+
+.burgerBtn {
+  position: relative;
+
+  &,
+  &::before,
+  &::after {
+    width: 30px;
+    height: 4px;
+
+    border: none;
+    border-radius: 5px;
+    background: $color-light;
+
+    transition: all 0.3s linear;
+  }
+
+  &::before {
+    content: '';
+
+    position: absolute;
+    top: -200%;
+    left: 0;
+  }
+
+  &::after {
+    content: '';
+
+    position: absolute;
+    bottom: -200%;
+    left: 0;
+  }
+
+  &.active {
+    background: transparent;
+  }
+
+  &.active::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+
+  &.active::after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+}

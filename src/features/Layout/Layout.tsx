@@ -1,16 +1,22 @@
-import { FC, PropsWithChildren } from 'react'
+import { FC, PropsWithChildren, useState } from 'react'
 
 import Header from 'features/Header/Header'
 import SideMenu from 'features/SideMenu/SideMenu'
 
+import cn from 'classnames'
+
 import s from './layout.module.scss'
 
 const Layout: FC<PropsWithChildren> = ({ children }) => {
+  const [isOpen, setIsOpen] = useState<boolean>(false)
   return (
     <div className={s.wrapper}>
-      <Header />
+      <Header
+        isMenuOpen={isOpen}
+        onMenuClick={() => setIsOpen(prevState => !prevState)}
+      />
       <div className={s.content}>
-        <aside className={s.sidebar}>
+        <aside className={cn(s.sidebar, { [s.active]: isOpen })}>
           <SideMenu />
         </aside>
         <main>{children}</main>

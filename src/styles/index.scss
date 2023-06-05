@@ -1,6 +1,7 @@
 @import './theme/colors.scss';
 @import './theme/fonts.scss';
 @import './theme/constants.scss';
+@import './theme/breakpoints.scss';
 
 @mixin container {
   width: 100%;

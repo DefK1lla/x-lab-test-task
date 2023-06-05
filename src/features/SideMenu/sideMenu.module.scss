@@ -5,6 +5,11 @@
   max-height: calc(100vh - $header-height);
 
   overflow: auto;
+
+  @include md {
+    padding-left: 32px;
+    padding-top: 32px;
+  }
 }
 
 .title {
@@ -14,4 +19,9 @@
 
   font-size: 20px;
   font-weight: $fw-bold;
+}
+
+.userWrapper {
+  display: block;
+  padding-left: 32px;
 }

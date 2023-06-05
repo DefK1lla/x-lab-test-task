@@ -5,11 +5,24 @@
 }
 
 .sidebar {
+  width: 100%;
   max-width: 300px;
 
   margin-left: -32px;
 
   box-shadow: 5px 0 5px -5px rgba(2, 0, 96, 0.25);
+
+  @include md {
+    position: fixed;
+    top: $header-height;
+    left: -320px;
+
+    transition: left 0.3s linear;
+
+    &.active {
+      left: 0;
+    }
+  }
 }
 
 .content {
