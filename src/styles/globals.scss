@@ -1,0 +1,29 @@
+@use 'styles' as *;
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+
+  font-family: $font-Montserrat;
+  color: $color-dark;
+  line-height: $line-height;
+
+  background: $color-light;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  line-height: inherit;
+}
+
+button,
+input {
+  color: inherit;
+  line-height: inherit;
+}
