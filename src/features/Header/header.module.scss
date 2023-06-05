@@ -1,0 +1,21 @@
+@use 'styles' as *;
+
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  padding: 16px 0;
+
+  background: $color-main;
+}
+
+.container {
+  @include container;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

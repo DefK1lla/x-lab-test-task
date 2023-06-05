@@ -1,0 +1,15 @@
+@use 'styles' as *;
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  fill: $color-dark;
+  color: $color-dark;
+
+  &.white {
+    fill: $color-light;
+    color: $color-light;
+  }
+}

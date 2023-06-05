@@ -1,0 +1,19 @@
+@use 'styles' as *;
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  color: $color-dark;
+  fill: $color-dark;
+
+  &.white {
+    color: $color-light;
+    fill: $color-light;
+  }
+}
+
+.name {
+  font-weight: $fw-bold;
+}
