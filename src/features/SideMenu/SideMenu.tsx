@@ -6,6 +6,7 @@ import s from './sideMenu.module.scss'
 const SideMenu = () => {
   return (
     <div className={s.wrapper}>
+      <h2 className={s.title}>Меню</h2>
       {ROUTES.map(r => (
         <MenuItem key={r.label} {...r} />
       ))}

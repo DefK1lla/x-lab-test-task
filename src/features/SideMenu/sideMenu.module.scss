@@ -6,3 +6,12 @@
 
   overflow: auto;
 }
+
+.title {
+  padding: 0;
+  padding-left: 32px;
+  margin: 32px 0;
+
+  font-size: 20px;
+  font-weight: $fw-bold;
+}
