@@ -7,7 +7,7 @@ const Header = () => {
     <div className={s.wrapper}>
       <div className={s.container}>
         <Link to='/'>
-          <Logo variant='white' />
+          <Logo variant='white' withText />
         </Link>
 
         <Link to='/'>

@@ -13,14 +13,14 @@ interface LogoProps {
 
 const Logo: FC<LogoProps> = ({
   variant = 'black',
-  withText = true,
+  withText = false,
 }) => {
   return (
     <div
       className={cn(s.wrapper, { [s.white]: variant === 'white' })}
     >
       <LogoIcon />
-      {withText && <span>Wrench CRM</span>}
+      {withText && <span className={s.text}>Wrench CRM</span>}
     </div>
   )
 }
