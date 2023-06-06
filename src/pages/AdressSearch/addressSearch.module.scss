@@ -1,0 +1,12 @@
+@use 'styles' as *;
+
+.wrapper {
+  padding-top: 32px;
+}
+
+.title {
+  margin-bottom: 16px;
+
+  font-size: 26px;
+  font-weight: $fw-bold;
+}
