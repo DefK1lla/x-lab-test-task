@@ -1,0 +1,27 @@
+@use 'styles' as *;
+
+.wrapper {
+  padding: 24px;
+
+  height: 100%;
+
+  box-shadow: 0px 2px 8px rgba(2, 0, 97, 0.25);
+  border-radius: 10px;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 16px;
+
+  font-size: 26px;
+  font-weight: $fw-bold;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.overlay {
+  font-size: 34px;
+}

@@ -6,6 +6,8 @@
 
   overflow: auto;
 
+  background: $color-light;
+
   @include md {
     padding-left: 32px;
     padding-top: 32px;
