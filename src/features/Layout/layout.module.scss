@@ -13,11 +13,20 @@
   @include container;
   display: flex;
   gap: 32px;
+
+  @include md {
+    gap: 0;
+  }
 }
 
 .sidebarWrapper {
   width: 100%;
   max-width: 320px;
+
+  @include md {
+    width: 0;
+    max-width: 0;
+  }
 }
 
 .sidebar {
