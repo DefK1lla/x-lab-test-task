@@ -6,7 +6,7 @@ import { Layout } from 'features'
 
 import ROUTES from 'shared/constants/routes'
 
-import NotFound from 'pages/404/404'
+import { NotFound } from 'pages'
 
 function App() {
   return (
