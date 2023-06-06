@@ -16,9 +16,11 @@ const Layout: FC<PropsWithChildren> = ({ children }) => {
         onMenuClick={() => setIsOpen(prevState => !prevState)}
       />
       <div className={s.content}>
-        <aside className={cn(s.sidebar, { [s.active]: isOpen })}>
-          <SideMenu />
-        </aside>
+        <div className={s.sidebarWrapper}>
+          <aside className={cn(s.sidebar, { [s.active]: isOpen })}>
+            <SideMenu />
+          </aside>
+        </div>
         <main className={s.main}>{children}</main>
       </div>
     </div>

@@ -1,7 +1,12 @@
 @use 'styles' as *;
 
 .wrapper {
-  padding-top: $header-height;
+  margin-top: $header-height;
+
+  height: 100%;
+  max-height: calc(100vh - $header-height);
+
+  overflow: auto;
 }
 
 .content {
@@ -10,7 +15,14 @@
   gap: 32px;
 }
 
+.sidebarWrapper {
+  width: 100%;
+  max-width: 320px;
+}
+
 .sidebar {
+  position: fixed;
+
   width: 100%;
   max-width: 320px;
 
