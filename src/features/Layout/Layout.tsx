@@ -19,7 +19,7 @@ const Layout: FC<PropsWithChildren> = ({ children }) => {
         <aside className={cn(s.sidebar, { [s.active]: isOpen })}>
           <SideMenu />
         </aside>
-        <main>{children}</main>
+        <main className={s.main}>{children}</main>
       </div>
     </div>
   )

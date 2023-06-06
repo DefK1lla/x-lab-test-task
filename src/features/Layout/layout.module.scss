@@ -4,6 +4,12 @@
   padding-top: $header-height;
 }
 
+.content {
+  @include container;
+  display: flex;
+  gap: 32px;
+}
+
 .sidebar {
   width: 100%;
   max-width: 300px;
@@ -25,6 +31,6 @@
   }
 }
 
-.content {
-  @include container;
+.main {
+  width: 100%;
 }
