@@ -1,0 +1,21 @@
+@use 'styles' as *;
+
+.wrapper {
+  padding-top: 32px;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 16px;
+
+  font-weight: $fw-bold;
+  font-size: 26px;
+}
+
+.postTitle {
+  margin-top: 0;
+  margin-bottom: 24px;
+
+  font-size: 20px;
+  font-weight: $fw-medium;
+}

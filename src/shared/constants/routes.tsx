@@ -10,14 +10,14 @@ import { ReactComponent as SettingsIcon } from 'assets/icons/routes/settings.svg
 import { ReactComponent as SettingsProfileIcon } from 'assets/icons/routes/settings.profile.svg'
 import { ReactComponent as SettingsFinancesIcon } from 'assets/icons/routes/settings.finances.svg'
 import { ReactComponent as ExitIcon } from 'assets/icons/routes/exit.svg'
-import { AddressSearchPage } from 'pages'
+import { AddressSearchPage, MainPage } from 'pages'
 
 const ROUTES: Route[] = [
   {
     label: 'Главная',
     href: '/',
     icon: <MainIcon />,
-    element: null,
+    element: <MainPage />,
   },
   {
     label: 'Поиск адресов',
