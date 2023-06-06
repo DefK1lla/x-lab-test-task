@@ -1,0 +1,30 @@
+@use 'styles' as *;
+
+.btn {
+  padding: 19px 40px;
+
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  font-size: 26px;
+  font-weight: $fw-bold;
+  color: $color-light;
+
+  fill: $color-light;
+
+  border: none;
+  background: $color-main;
+  border-radius: 10px;
+  cursor: pointer;
+
+  transition: background 0.3s linear;
+
+  &:hover {
+    background: rgba($color-main, 0.9);
+  }
+
+  &:active {
+    transform: scale(0.99);
+  }
+}
