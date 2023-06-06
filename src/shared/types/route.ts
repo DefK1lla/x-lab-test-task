@@ -5,4 +5,5 @@ export interface Route {
   href?: string
   icon: ReactNode
   items?: Route[]
+  element?: ReactNode | null
 }
