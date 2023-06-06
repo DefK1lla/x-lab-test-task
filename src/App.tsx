@@ -15,21 +15,20 @@ function App() {
         <Routes>
           {ROUTES.map(r => {
             if (r.items)
-              return r.items.map(r => (
-                <Route
-                  key={r.href}
-                  path={r.href}
-                  element={r.element ?? <NotFound />}
-                />
-              ))
-            return (
-              <Route
-                key={r.href}
-                path={r.href}
-                element={r.element ?? <NotFound />}
-              />
-            )
+              return r.element
+                ? r.items.map(r => (
+                    <Route
+                      key={r.href}
+                      path={r.href}
+                      element={r.element}
+                    />
+                  ))
+                : null
+            return r.element ? (
+              <Route key={r.href} path={r.href} element={r.element} />
+            ) : null
           })}
+          <Route path='*' element={<NotFound />} />
         </Routes>
       </Layout>
     </BrowserRouter>
